@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap");
+
+:root {
+  --font-size-paragraph: 18px;
+  --font-size-title: 20px;
+  --font-size-items: 15px;
+  --color-white: hsl(0, 0%, 100%);
+  --color-blue: rgba(208, 228, 251, 0.599);
+  --color-cyan: hsl(178, 100%, 50%);
+  --font-weight-200: 200;
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: var(--font-size-paragraph);
+  background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+  position: absolute;
+  height: auto;
+  width: 21rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+}
+
+.center {
+  margin: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.picture {
+  position: relative;
+  background-color: hsl(216, 50%, 16%);
+  height: 17.5rem;
+  border-radius: 1rem;
+}
+
+.equilibrium {
+  border-radius: 0.5rem;
+  max-width: 18rem;
+  max-height: 18rem;
+  cursor: pointer;
+}
+
+.picture :hover {
+  opacity: 1;
+}
+
+.view {
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  height: 18rem;
+  max-width: 18rem;
+  max-height: 18rem;
+  background-color: hsl(212, 45%, 89%, 50%);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.view .iconView {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 300;
+  transform: translate(-50%, -50%);
+}
+
+.view .cube {
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  height: 100%;
+  max-width: 18rem;
+  max-height: 19rem;
+  object-fit: cover;
+  opacity: 1;
+  border-radius: 0.5rem;
+}
+
+.voile {
+  position: absolute;
+  top: 0rem;
+  width: 100%;
+  height: 100%;
+  max-width: 18rem;
+  max-height: 18rem;
+  opacity: 1;
+  z-index: 100;
+  border-radius: 0.5rem;
+  background: linear-gradient(rgba(86, 192, 224, 0.3), rgba(86, 192, 224, 0.3));
+}
+
+.text .title {
+  color: var(--color-white);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-600);
+  margin-top: 2rem;
+  margin-bottom: 0;
+  display: inline-block;
+  width: auto;
+}
+
+.text .title:hover {
+  color: var(--color-cyan);
+  cursor: pointer;
+}
+
+.text .paragraph {
+  color: var(--color-blue);
+  font-weight: var(--font-weight-200);
+}
+
+.items {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size);
+}
+
+.forTheMargin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eth {
+  color: var(--color-cyan);
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-items);
+  margin-left: 0.5rem;
+}
+
+.daysLeft {
+  display: flex;
+  align-items: center;
+  color: var(--color-blue);
+  font-size: var(--font-size-items);
+  font-weight: var(--font-weight-400);
+  margin-left: 0.5rem;
+}
+
+.fdp {
+  border-bottom: 0.06rem solid var(--color-blue);
+  margin: 0;
+}
+
+.creation {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 80px;
+  font-size: var(--font-size-items);
+  font-weight: var(--font-weight-400);
+}
+
+.avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  border: #fff solid 1px;
+  margin-right: 1rem;
+}
+
+.inline {
+  color: var(--color-blue);
+}
+
+.inline .hover {
+  color: var(--color-white);
+}
+
+.inline .hover:hover {
+  color: var(--color-cyan);
+  cursor: pointer;
+}
